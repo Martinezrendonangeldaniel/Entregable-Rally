@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tazas de Mortalidad</title>
+    <title>Tasas de Mortalidad - Mudsuck</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.jpeg" alt="Logo de SegundaOportunidAPP" height="40" class="rounded-circle">
-        <h1>Mudsuck</h1>
-        <nav>
+    <header class="app-bar">
+        <div class="logo-container">
+            <img src="img/logo.jpeg" alt="Logo de Mudsuck" class="logo">s
+        </div>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="Index.html">Inicio</a></li>
-                <li><a href="Costo.html">Costo</a></li>
+                <li><a href="Costo.html">Costos</a></li>
                 <li><a href="Desastres_Naturales.html">Desastres Naturales</a></li>
-                <li><a href="Tazas_de_Mortalidad.html">Tazas de Mortalidad</a></li>
+                <li><a href="Tazas_de_Mortalidad.html" class="active">Tasas de Mortalidad</a></li>
+                <li><a href="Materiales.html">Materiales</a></li>
             </ul>
         </nav>
+        <div class="app-bar-actions">
+            <button class="icon-button" aria-label="Menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
     </header>
+    
+    <main class="main-content">
+        <section class="hero-section">
+            <h1 class="headline">Estadísticas y Tasas de Mortalidad</h1>
+            <p class="subhead">El impacto humano de los desastres naturales y la urgencia de herramientas de rescate eficientes.</p>
+        </section>
+        
+        <section class="materiales-grid">
+            <article class="material-card" style="grid-column: 1 / -1;">
+                <div class="material-icon" style="background-color: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container);">
+                    <span class="material-symbols-outlined">monitoring</span>
+                </div>
+                <h3>Impacto de las inundaciones de barro</h3>
+                <p>
+                    Las inundaciones y los deslaves no solo destruyen infraestructuras, sino que representan un grave riesgo para la vida humana. El lodo denso y pesado dificulta las labores de búsqueda y rescate, aumentando el número de víctimas fatales.
+                </p>
+                <p style="margin-top: 16px;">
+                    A continuación, se presentan los datos más relevantes sobre la mortalidad asociada a estos eventos y la vulnerabilidad de las zonas afectadas.
+                </p>
+            </article>
+            
+            <article class="material-card">
+                <div class="material-icon" style="background-color: var(--md-sys-color-secondary-container); color: var(--md-sys-color-on-secondary-container);">
+                    <span class="material-symbols-outlined">warning</span>
+                </div>
+                <h3>Zonas de Alto Riesgo</h3>
+                <p>Las viviendas ubicadas en zonas vulnerables y laderas son las más propensas a quedar sepultadas por el lodo, dificultando la extracción manual.</p>
+            </article>
+            
+            <article class="material-card">
+                <div class="material-icon" style="background-color: var(--md-sys-color-tertiary-container); color: var(--md-sys-color-on-tertiary-container);">
+                    <span class="material-symbols-outlined">timer</span>
+                </div>
+                <h3>Tiempo de Respuesta</h3>
+                <p>El tiempo es crucial. La remoción manual con palas puede tomar días, lo que reduce drásticamente las posibilidades de supervivencia de las personas atrapadas.</p>
+            </article>
+            
+            <article class="material-card">
+                <div class="material-icon" style="background-color: var(--md-sys-color-surface-variant); color: var(--md-sys-color-on-surface-variant);">
+                    <span class="material-symbols-outlined">health_and_safety</span>
+                </div>
+                <h3>Riesgos para la Salud</h3>
+                <p>Además de las muertes por ahogamiento o traumatismos, el barro estancado propicia enfermedades infecciosas que elevan la tasa de mortalidad post-desastre.</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Mudsuck &copy; 2024 - Innovación en emergencias</p>
+    </footer>
+</body>
+</html>
